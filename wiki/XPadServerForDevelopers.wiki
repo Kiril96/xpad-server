@@ -36,3 +36,9 @@ ctl# [wBtns]   LT   RT   [ LX  ] [ LY  ]  [  RX  ]  [  RY   ]
 }}}
 
 Encoded most significant byte first.
+
+=References=
+XInput Standard
+ * http://msdn.microsoft.com/en-us/library/windows/desktop/ee417001%28v=vs.85%29.aspx
+
+ * http://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.reference.xinput_gamepad%28v=vs.85%29.aspx
