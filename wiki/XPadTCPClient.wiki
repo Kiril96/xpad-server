@@ -139,3 +139,5 @@ Given a Java class XINPU_GAMEPAD to mirror its C++ counterpart you can unpack th
 	}
 	
 }}}
+
+With XPad Server you can use your XBox 360 controller in any phone or tablet. Check out our Android IME!
