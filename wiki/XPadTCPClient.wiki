@@ -1,14 +1,8 @@
 #summary Writing a TCP client.
 #labels Featured
 
-= Introduction =
+= Writing an XPad Server TCP Client=
 
-Add your content here.
+Writing a TCP is really simple. Just create a socket to the host (default port is 5555), then receive and consume the network packets as encoded in the previous wiki.
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Here is a simple client written in Java:
