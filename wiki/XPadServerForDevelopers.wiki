@@ -28,8 +28,11 @@ The XPad Server packs the above structure above as a 13 byte packet where:
  SHORT sThumbRY (2)
 }}}
 
-Client receive a 13 byte packet over the network
+TCP Clients receive a 13 byte packet over the network
+
+{{{
 1     2    3    4    5    6   7   8   9   10    11   12   13
 ctl# [wBtns]   LT   RT   [ LX  ] [ LY  ]  [  RX  ]  [  RY   ]
+}}}
 
-encoded most significant byte first.
+Encoded most significant byte first.
