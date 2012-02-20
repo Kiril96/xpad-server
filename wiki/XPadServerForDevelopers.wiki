@@ -1,9 +1,31 @@
-#summary TODO.
+#summary XPad Server TCP using C++.
 #labels Featured
 
-= Introduction =
+= XInput Standard=
+XInput is defined in C++ as
+{{{
+typedef struct _XINPUT_GAMEPAD {
+    WORD wButtons;
+    BYTE bLeftTrigger;
+    BYTE bRightTrigger;
+    SHORT sThumbLX;
+    SHORT sThumbLY;
+    SHORT sThumbRX;
+    SHORT sThumbRY;
+}}}
 
-Add your content here.
+The XPad Server packs the above structrue as a 13 byte packet where:
+
+{{{
+	  BYTE (1 - controller #)
+	  WORD wButtons; (2 bytes)
+	  BYTE bLeftTrigger; (1)
+	  BYTE bRightTrigger; (1)
+	  SHORT sThumbLX; (2)
+	  SHORT sThumbLY; (2)
+	  SHORT sThumbRX; (2)
+	  SHORT sThumbRY (2)
+}}}
 
 
 = Details =
