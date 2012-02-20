@@ -6,3 +6,72 @@
 Writing a TCP is really simple. Just create a socket to the host (default port is 5555), then receive and consume the network packets as encoded in the previous wiki.
 
 Here is a simple client written in Java:
+
+{{{
+public class XPadClient {
+	/* Size of the buffer sent by XPad server
+	 * BYTE (1 byte - controller #)
+	 * WORD wButtons; (2 bytes)
+	 * BYTE bLeftTrigger; (1)
+	 * BYTE bRightTrigger; (1)
+	 * SHORT sThumbLX; (2)
+	 * SHORT sThumbLY; (2)
+	 * SHORT sThumbRX; (2)
+	 * SHORT sThumbRY (2)
+	 */
+	public static final int XINPUT_BUFFER_SIZE = 13;
+
+	private Socket mSocket;
+	private BufferedInputStream bis;
+	private BufferedOutputStream bos;
+	
+	private int mPort = 5555;
+	private String mServer;
+	private boolean mDone = false;
+	
+        private void connect() {
+		if ( mServer == null || mServer.length() < 1) {
+			sendError("A Server is required.");
+			return;
+		}
+		Log.d(TAG, "Connecting to " + mServer + ":" + mPort);
+	
+		try {
+			mSocket = new Socket(mServer, mPort);
+			
+			Log.d(TAG, "Connected.");
+			
+			sendConnected();
+			
+			// connected
+			mDone = false;
+			bis = new BufferedInputStream(mSocket.getInputStream());
+			bos = new BufferedOutputStream(mSocket.getOutputStream());
+
+			// msgs are 13 bytes
+			byte[] buffer = new byte[XPadClient.XINPUT_BUFFER_SIZE];
+			int read;
+			XINPUT_GAMEPAD pad;
+			
+			while (! mDone) {
+				read = bis.read(buffer);
+				
+				if ( read != -1) {
+					//dumpBytes("BUF", buffer, read);
+					
+					// Unpack and consume
+					pad = unpackBytes(buffer);
+					parsePacket(pad);
+				}
+			}
+			
+			Log.d(TAG, "Connect thread done");
+			
+		} catch (Exception e) {
+			sendError("Connection Error: " + e.getMessage());
+		}
+        }
+	// ...
+}
+
+}}}
