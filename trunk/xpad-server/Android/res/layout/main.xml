@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="XBox 360 Game Controller IME" />
+
+<!--     
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/etServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="localhost"
+            android:layout_weight="1" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.46"
+            android:text="Connect" />
+ 
+    </LinearLayout>
+ -->    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="1. Make sure the XBox input method is enabled under Settings, Language &amp; Keyboard." />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="2. Use the IME Settings to enter a server IP." />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Event Log" />
+    
+    <EditText
+        android:id="@+id/etLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
+        android:inputType="textMultiLine" android:gravity="top">
+        <requestFocus />
+    </EditText>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+	<Button
+        android:id="@+id/btnClear"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:text="Clear" />
+    <!-- 	<Button
+        android:id="@+id/btnDisconnect"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:text="Disconnect" />
+ -->
+	<Button
+        android:id="@+id/btnSelectIME"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:text="Select IME" />
+
+	<Button
+        android:id="@+id/btnSettings"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:text="Settings" />
+	
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:text="@string/quit" />
+    
+	</LinearLayout>
+</LinearLayout>

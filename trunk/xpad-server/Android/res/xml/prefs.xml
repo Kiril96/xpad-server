@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="XPad Settings">
+	
+	<PreferenceCategory android:title="1. Before you Start">
+		<Preference 
+			android:title="Turn on the XBox 360 IME" android:key="key_p1"></Preference>
+		<!-- 
+		<Preference 
+			android:summary="Pair the Joystick within Settings, Wireless Controls, Bluetooth Settings"
+			android:title="Turn on Joystick &amp; pair it" android:key="key_p1"></Preference>
+		 -->
+	</PreferenceCategory>
+	 
+	<PreferenceCategory android:title="2. Enter an XPad Server IP">
+		<EditTextPreference android:defaultValue="localhost"
+			android:summary="Enter the IP address of the XPad server" android:title="XPad Server"
+			android:key="key_server"></EditTextPreference>
+		 
+		<EditTextPreference android:defaultValue="5555"
+			android:summary="Server Port" android:title="Port"
+			android:key="key_port"></EditTextPreference>
+		<!-- 
+		<EditTextPreference android:defaultValue="ENTER"
+			android:summary="Key binding for Joytick button C" android:title="Button C"
+			android:key="key_btnc"></EditTextPreference>
+
+		<EditTextPreference android:defaultValue="ESC"
+			android:summary="Key binding for Joytick button D" android:title="Button D"
+			android:key="key_btnd"></EditTextPreference>
+		 -->
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="3. Button Bindings">
+		<EditTextPreference android:defaultValue="ENTER"
+			android:summary="Key binding for button X" android:title="Gamepad X"
+			android:key="key_btnx"></EditTextPreference>
+
+		<EditTextPreference android:defaultValue="ESC"
+			android:summary="Key binding for button Y" android:title="Gamepad Y"
+			android:key="key_btny"></EditTextPreference>
+		
+	    <EditTextPreference android:defaultValue="SPACE"
+			android:summary="Key binding for button A" android:title="Gamepad A"
+			android:key="key_btna"></EditTextPreference>
+
+		<EditTextPreference android:defaultValue="\@"
+			android:summary="Key binding for button B" android:title="Gamepad B"
+			android:key="key_btnb"></EditTextPreference>
+		    	    
+	<!-- 
+		<ListPreference android:entryValues="@array/ActionVaues"
+			android:entries="@array/Actions" android:summary="List Summary"
+			android:title="List Preference"></ListPreference>
+			
+		<Preference android:summary="Preference Summary"
+			android:title="Preference" android:selectable="true" android:key="key_pref1"
+			android:enabled="true" android:defaultValue="pref1" android:shouldDisableView="false"></Preference>
+		 
+		<CheckBoxPreference android:title="IME Selector" 
+			android:summary="Press here to select the IME" android:key="key_showime"></CheckBoxPreference>
+	 -->	
+	</PreferenceCategory>
+	
+</PreferenceScreen>
+
