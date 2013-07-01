@@ -8,7 +8,14 @@ Follow these instructions to setup your PS3 controller.
 = Instructions =
 
   * Download the MotioninJoy PS3 manager from http://www.motioninjoy.com/download
-  * Install MotioninJoy and run the DS3Tool
-  * Connect your PS3 controller via USB to your PC and load the SixAxis driver packed with MotioninJow (see the next figure).
+  * Install MotioninJoy and run the DS3Tool (see figure 1).
+  * Connect your PS3 controller via USB to your PC. Click the *Driver Manager* tab in the DS3Tool and click the *Load Driver* button. This will install the SixAxis driver packed with MotioninJow in your PC(see figure1).
+
+http://xpad-server.googlecode.com/files/joy1.png
+
+  * After the driver installation completes you can test your PS# controller! Click the *Profiles* in the DS3Tool (see figure 2).
+  * You will see the connected game controller. Click the *Vibration testing* button at the bottam to test it!
+  * Select *XInput-Deafult* in the controller mode. *This is important*. It will translate PS3 controller events into XINPUT events understiid by the Xpad server.
+  * You can now run the XPad Server. Right click *Connect USB XBOX Controller* from the system tray and you are ready to go!
 
 http://xpad-server.googlecode.com/files/joy1.png
