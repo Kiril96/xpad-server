@@ -14,10 +14,10 @@ Follow these instructions to setup your PS3 controller.
 http://xpad-server.googlecode.com/files/joy1.png
 
   * After the driver installation completes you can test your PS3 controller! Click the *Profiles* in the DS3Tool (see figure 2).
-  * You will see the connected game controller. Click the *Vibration testing* button at the bottam to test it!
+  * You will see the connected game controller. Click the *Vibration testing* button at the bottom to test it!
   * Select *XInput-Deafult* in the controller mode. *This is important*. It will translate PS3 controller events into XINPUT events understood by the Xpad server.
 
-http://xpad-server.googlecode.com/files/joy1.png
+http://xpad-server.googlecode.com/files/joy2.png
 
   * You can now run the XPad Server. Right click *Connect USB XBOX Controller* from the system tray and you are ready to go!
 
@@ -27,7 +27,7 @@ http://xpad-server.googlecode.com/files/st2.jpg
 To use your controller in wireless mode you need a bluetooth dongle supported by MotioninJoy. _Note: Your default PC/Laptop Bluetooth adapter will not work!_
 
   * For a list of compatible BT dongles see http://www.motioninjoy.com/wiki/en/help/btcompatibility
-  * Coonect your PS3 Controller to your PC via USB.
+  * Connect your PS3 Controller to your PC via USB.
   * Connect your BT dongle to your PC/Laptop (via USB) and run the D3Tool
 
 http://xpad-server.googlecode.com/files/joy3.png
