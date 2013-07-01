@@ -9,4 +9,6 @@ Follow these instructions to setup your PS3 controller.
 
   * Download the MotioninJoy PS3 manager from http://www.motioninjoy.com/download
   * Install MotioninJoy and run the DS3Tool
-  * Connect your PS3 controller via USB to your PC and load the SixAxis driver packed with MotioninJow (see the next figure)
+  * Connect your PS3 controller via USB to your PC and load the SixAxis driver packed with MotioninJow (see the next figure).
+
+http://xpad-server.googlecode.com/files/joy1.png
