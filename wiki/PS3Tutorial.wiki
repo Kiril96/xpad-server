@@ -15,7 +15,7 @@ http://xpad-server.googlecode.com/files/joy1.png
 
   * After the driver installation completes you can test your PS3 controller! Click the *Profiles* in the DS3Tool (see figure 2).
   * You will see the connected game controller. Click the *Vibration testing* button at the bottom to test it!
-  * Select *XInput-Deafult* in the controller mode. *This is important*. It will translate PS3 controller events into XINPUT events understood by the Xpad server.
+  * Select *XInput-Default* in the controller mode. *This is important*. It will translate PS3 controller events into XINPUT events understood by the Xpad server.
 
 http://xpad-server.googlecode.com/files/joy2.png
 
