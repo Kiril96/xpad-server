@@ -190,6 +190,8 @@ int CXBOXController::Process()
 				}
 			}
 		} 
+    // un-hog the CPU
+		Sleep(50);
 	} 
 	LOGD("Thread Loop COMPLETE\n");
 	return 0;
