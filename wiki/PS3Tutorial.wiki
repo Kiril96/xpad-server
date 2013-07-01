@@ -33,4 +33,4 @@ To use your controller in wireless mode you need a bluetooth dongle supported by
 http://xpad-server.googlecode.com/files/joy3.png
 
   * Click the *BlueTooth Pair* tab at the top (see figure 3). Your BT dongle should display in the adapter section. _If it does not it means your BT dongle is NOT compatible with MotioninJoy!_ Your PS3 Controller will display in the *DUALSHOCK* section (If it does not hit the *Reload this page* button in the right corner).
-  * Click the *Pair Now* button at the bottom. Unplug your PS3 USB cable. Your PS3 is ready for wireless now. Press the PS button in the controller to connect to the PC via BT and press the *Vibration Testing* in the *profiles* section of the DS3Tool to test it. You are ready to rumble!
+  * Click the *Pair Now* button at the bottom. Unplug your PS3 USB cable. Your PS3 is ready for wireless now. Press the PS button in the controller to connect to the PC via BT and press the *Vibration Testing* in the *Profiles* section of the DS3Tool to test it. You are ready to rumble!
