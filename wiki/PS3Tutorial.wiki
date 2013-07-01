@@ -1,13 +1,12 @@
+#labels Featured
 #Setting up XPad Server with the PS3 Controller.
 
-= Introduction =
+= Setting up XPad Server with the PS3 Controller =
 
-Add your content here.
+Follow these instructions to setup your PS3 controller.
 
+= Instructions =
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * Download the MotioninJoy PS3 manager from http://www.motioninjoy.com/download
+  * Install MotioninJoy and run the DS3Tool
+  * Connect your PS3 controller via USB to your PC and load the SixAxis driver packed with MotioninJow (see the next figure)
